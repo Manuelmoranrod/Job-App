@@ -1,4 +1,4 @@
-//const mongoose = require('../utils/nosql_db')
+const mongoose = require('../utils/db')
 
 const CourseSchema = new mongoose.Schema({
     title: {
@@ -25,7 +25,10 @@ const CourseSchema = new mongoose.Schema({
     },
     online: {
         type: Boolean,
+    },
+    link: {
+        type: String
     }
 })
 
-module.exports = mongoose.model('course', CourseSchema, 'courseOffers')
+module.exports = mongoose.model('courses', CourseSchema)

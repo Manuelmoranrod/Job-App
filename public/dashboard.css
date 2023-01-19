@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(154, 154, 179);
+  justify-content: space-between;
+  }
+<<<<<<< HEAD
+  .button {
+    width: 70px;
+    background-color: #e7a923;
+    font-size: 16px;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 110px;
+    position: relative;
+    top: 300px; left: 300px;
+    
+  }
+=======
+  
+    
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  .button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  
+>>>>>>> b570c837b1c1f1ca7ab8d0e03e0b5ac804edf639
+
+.footer {
+  background-color: cornflowerblue;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.imgHmb {
+  width: 100%;
+  margin: auto;
+  justify-content: right;
+  width: 50px;
+  margin-left: 300px;
+}
+.imgProfile {
+  width: 30px;
+  height: 30px;
+}
+

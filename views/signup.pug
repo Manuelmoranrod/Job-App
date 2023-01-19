@@ -1,0 +1,26 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        link(rel="stylesheet", href="register.css")
+        title SignUp page
+    body
+        .inicio
+           i.fas.fa-home.fa-2x
+        .encabezado
+        span.login1 Register
+        span.log Login
+        span.reg Register
+        .formulario
+        form(action='/api/user', method="POST")
+            label(for="name") Name
+            input(type="text" name="name" id="name" class="name" required) 
+            label(for="email") Email
+            input(type="email" name="email" id="email" class="email" required)
+            label(for="password") Password
+            input(type="password" name="password" id="password" class="pass" required) 
+            input(type="submit", value="Signup User" id="register_button")
+        
+        include ./menu-bar.pug

@@ -1,0 +1,35 @@
+style
+    include ../public/favoritos.css
+footer.header
+    .usuario
+
+    nav.navbar  
+        a.nav-logo(href='/api/logout') Log Out
+        ul.nav-menu
+            li.nav-item
+                a.nav-link(href='/') Inicio
+            li.nav-item
+                a.nav-link(href='/register') Register
+            li.nav-item
+                a.nav-link(href='/login') Login
+            li.nav-item
+                a.nav-link(href='/profile') Editar perfil
+        .hamburger
+            span.bar
+            span.bar
+            span.bar
+
+script.
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.addEventListener("click", mobileMenu);
+    function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    }
+    const navLink = document.querySelectorAll(".nav-link");
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+    function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    }

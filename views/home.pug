@@ -1,0 +1,25 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="home.css")
+        
+        title Home - JobApp
+    body
+    
+    .encabezado
+    h4.coursepp YourCoursesApp
+    input.input(id="input_search", type="text", name="search" placeholder="Busca tu curso...")
+    button.button(id="btn_search" class="btn-search") Search
+    .cards
+        
+        include ./menu-bar.pug
+
+        
+
+
+    script
+        include ../utils/courseCard.js
+

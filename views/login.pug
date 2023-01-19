@@ -1,0 +1,37 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        link(rel="stylesheet", href="login.css")
+        title Login page
+    body
+        .inicio 
+            i.fas.fa-home.fa-2x
+        .encabezado
+        span.login Login
+        span.register Register
+        p.arriba LogIn
+        .formulario
+        form(action='/api/login', method="POST") 
+            label(for="email") Password
+            input(type="email" name="email" id="email" class="email" required) 
+            label(for="password") Email
+            .password-container
+                input(type="password" name="password" id="password" class="password" required) 
+                
+            input(type="submit", value="Login" id="login_button")
+        .google-container
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png" width="40" height="40" class="logo-google"/>
+            a(href="/google/") Continuar con Google 
+        .facebook-container
+            <img src="https://img.icons8.com/color/48/000000/facebook.png" width="40" height="40" class="logo-google"/>
+            a(href="/facebook/") Continuar con Facebook 
+        
+        include ./menu-bar.pug
+
+    script(src='/js/login.js')
+
